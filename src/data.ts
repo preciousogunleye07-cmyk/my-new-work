@@ -1,4 +1,7 @@
 import { Project, Pillar, Metric, Client } from './types';
+import woodImg from './assets/images/regenerated_image_1784089704169.png';
+import barkImg from './assets/images/regenerated_image_1784090037886.jpg';
+import blackRisingImg from './assets/images/regenerated_image_1784090879838.png';
 
 export const portfolioMetrics: Metric[] = [
   { value: "250+", label: "Happy customer" },
@@ -115,7 +118,7 @@ export const portfolioProjects: Project[] = [
     ],
     client: "Wood Furniture",
     year: "2026",
-    imageUrl: "/src/assets/images/regenerated_image_1784089704169.png"
+    imageUrl: woodImg
   },
   {
     id: "bark-ecommerce",
@@ -139,7 +142,7 @@ export const portfolioProjects: Project[] = [
     ],
     client: "Bark Co.",
     year: "2026",
-    imageUrl: "/src/assets/images/regenerated_image_1784090037886.jpg"
+    imageUrl: barkImg
   },
   {
     id: "black-rising",
@@ -163,6 +166,6 @@ export const portfolioProjects: Project[] = [
     ],
     client: "Black Rising",
     year: "2026",
-    imageUrl: "/src/assets/images/regenerated_image_1784090879838.png"
+    imageUrl: blackRisingImg
   }
 ];
