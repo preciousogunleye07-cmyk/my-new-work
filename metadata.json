@@ -1,0 +1,6 @@
+{
+  "name": "P-Trending Portfolio",
+  "description": "An elegant, interactive creative director and designer portfolio. Built with a refined Alabaster layout, custom follower cursors, dynamic project filters, immersive high-contrast media integration, and interactive project inquiry builder.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

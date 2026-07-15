@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Kanit", "Barlow", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Changa One", "Instrument Serif", Georgia, serif;
+}
+
+html, body {
+  background: #0C0C0C;
+  color: #FAF6F0;
+  font-family: "Kanit", sans-serif;
+  overflow-x: hidden;
+}
+
+.hero-heading {
+  background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.liquid-glass, .liquid-glass-strong {
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.02);
+  background-blend-mode: luminosity;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+}
+
+.liquid-glass::before, .liquid-glass-strong::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.4px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 20%, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.05) 80%, rgba(0,0,0,0.15) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.liquid-glass-strong {
+  backdrop-filter: blur(50px);
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.02), inset 0 1px 1px rgba(0,0,0,0.05);
+}
+
+/* Custom scrollbar matching design system */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #E4E0D9;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4C0B9;
+}
+
+/* Custom continuous marquee speed ticker */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-33.3333%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
